@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <img class="logo" src="images/logo.svg" alt="logo">
+
+  <div class="calculator">
+    <div class="left">
+      <div>
+        <h2 class="h2-left">Bill</h2>
+        <input class="input bill" placeholder="0" type="text" onkeypress="return /[0-9]/i.test(event.key)">
+      </div>
+      <div class="options">
+        <h2 class="h2-left">Select Tip %</h2>
+        <button class="button-left">5%</button>
+        <button class="button-left">10%</button>
+        <button class="button-left">15%</button>
+        <button class="button-left">25%</button>
+        <button class="button-left">50%</button>
+        <input class="button-left-custom" placeholder="Custom" onkeypress="return /[0-9]/i.test(event.key)"></input>
+      </div>
+      <div>
+        <h2 class="h2-left">Number of People</h2>
+        <input class="input people" placeholder="0" type="text" onkeypress="return /[0-9]/i.test(event.key)">
+      </div>
+    </div>
+    <div class="right">
+      <div class="result">
+        <div class="tip-amount">
+          <h2 class="h2-right">Tip Amount</h2>
+          <p class="p-right">/ person</p>
+        </div>
+        <p class="tip-result">$0.00</p>
+      </div>
+      <div class="result">
+        <div class="total">
+          <h2 class="h2-right">Total</h2>
+          <p class="p-right">/ person</p>
+        </div>
+        <p class="total-result">$0.00</p>
+      </div>
+
+
+      <button class="button-right">RESET</button>
+    </div>
+  </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
